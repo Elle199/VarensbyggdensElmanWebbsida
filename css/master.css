@@ -41,13 +41,10 @@ header > h1{
     margin-top: 0;
 }
 
-nav{
-    color: black;
-}
-
 nav a{
     background-color: #f5f5f5;
     border-radius: 0;
+    color: black;
 }
 
 nav a:hover, nav a:active, nav a:visited{
