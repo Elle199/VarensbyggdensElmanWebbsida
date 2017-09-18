@@ -1,0 +1,20 @@
+{
+  "name": "VarensbyggdensElmanWebbsida",
+  "homepage": "https://github.com/Elle199/VarensbyggdensElmanWebbsida",
+  "authors": [
+    "elliot.angman@gmail.com <fabian_max@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

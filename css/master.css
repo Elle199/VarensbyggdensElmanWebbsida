@@ -1,0 +1,41 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    padding-top: 1.5%;
+    height: 10%;
+    background-color: #85cafe; /*87CEFE*/
+}
+header > h1{
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+nav{
+    color: black;
+    display: inline;
+}
+
+nav a{
+    color: black;
+}
+nav a:hover, nav a:active, nav a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    min-height: 500px;
+    background-color: ;
+}
+
+footer{
+    min-height: 200px;
+    background-color: gray;
+}
+
+#navbar{
+    background-color: #fafafa;
+    border-radius: 0;
+}
