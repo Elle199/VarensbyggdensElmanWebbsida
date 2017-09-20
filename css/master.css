@@ -1,9 +1,10 @@
 @media screen and (min-width: 991px) {
     .footer{
-        /*position: fixed;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 100%;
         bottom: 0;
-        min-height: 100px;
-        width: 100%;*/
+        width: 100%;
         background-color: rgb(32, 35, 42);
         color: #fff;
         padding: 1em;
@@ -14,8 +15,9 @@
     }
 }
 @media screen and (max-width: 990px) {
-    footer{
-        display: inherit;
+    .footer{
+        /*display: inherit;*/
+        position: absolute;
         bottom: 0;
         min-height: 100px;
         width: 100%;
@@ -23,17 +25,23 @@
         color: #fff;
         padding-top: 1em;
     }
+
+    nav{
+        margin-bottom: 1em !important;
+    }
 }
+
 body{
     height: 100%;
     width: 100%;
+    position: relative;
+    background-color: #f5f5f5 !important;
 }
 
 header{
     padding-top: 1em;
     padding-bottom: 1em;
     height: 10%;
-    background-color: #85cafe;
 }
 
 div header{
@@ -45,8 +53,12 @@ header > h1{
     margin-top: 0;
 }
 
+nav{
+    margin-top: 5rem;
+}
+
 nav a{
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
     color: black;
 }
 
@@ -58,20 +70,45 @@ nav a:hover, nav a:active, nav a:visited{
 nav a:hover{
     color: black !important;
     border-right: 0.4em solid #85cafe;
-    background-color: #f5f5f5 !important;
+    background-color: #f0f0f0 !important;
 }
 
 main{
-    margin-top: 2em;
+    background-color: transparent;
     min-height: 500px;
-    background-color: #fff;
+    position: relative;
 }
 
 .no-border{
     border: 0 !important;
     border-radius: 0 !important;
+    box-shadow: none;
 }
 
 .active{
     border-right: 0.4em solid #85cafe;
+}
+
+#page-header{
+    box-shadow: 0px 5px 10px rgba(33,37,41,.1);
+    position: relative;
+    z-index: 2;
+    background-color: #85cafe;
+}
+
+#wrapper{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding: 0 !important;
+    box-shadow: 0px 0px 10px rgba(33,37,41,.05);
+    margin-bottom: 0;
+    background-color: #fafafa;
+}
+
+#main-content{
+    padding-top: 0;
+    margin-top: 4rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(33,37,41,.1);
 }
