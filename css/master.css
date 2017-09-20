@@ -1,25 +1,17 @@
 @media screen and (min-width: 991px) {
     .footer{
-        position: sticky;
-        position: -webkit-sticky;
-        top: 100%;
         bottom: 0;
         width: 100%;
         background-color: rgb(32, 35, 42);
+        box-shadow: 0px -5px 10px rgba(33,37,41,.2);
         color: #fff;
         padding: 1em;
-    }
-
-    #contact_card{
-        margin-left: 1em;
     }
 }
 @media screen and (max-width: 990px) {
     .footer{
-        /*display: inherit;*/
-        position: absolute;
+        position: relative;
         bottom: 0;
-        min-height: 100px;
         width: 100%;
         background-color: rgb(32, 35, 42);
         color: #fff;
@@ -44,10 +36,6 @@ header{
     height: 10%;
 }
 
-div header{
-    background-color: transparent;
-}
-
 header > h1{
     margin-left: 5%;
     margin-top: 0;
@@ -62,38 +50,26 @@ nav a{
     color: black;
 }
 
-nav a:hover, nav a:active, nav a:visited{
-    text-decoration: none;
-    color: black;
-}
-
 nav a:hover{
-    color: black !important;
-    border-right: 0.4em solid #85cafe;
+    color: black;
+    border-right: 0.6rem solid #85cafe;
     background-color: #f0f0f0 !important;
-}
-
-main{
-    background-color: transparent;
-    min-height: 500px;
-    position: relative;
 }
 
 .no-border{
     border: 0 !important;
     border-radius: 0 !important;
-    box-shadow: none;
 }
 
 .active{
-    border-right: 0.4em solid #85cafe;
+    border-right: 0.6rem solid #85cafe;
 }
 
 #page-header{
     box-shadow: 0px 5px 10px rgba(33,37,41,.1);
     position: relative;
     z-index: 2;
-    background-color: #85cafe;
+    background-color: #85cafe; /*#85cafe #fafafa*/
 }
 
 #wrapper{
@@ -101,14 +77,14 @@ main{
     z-index: 1;
     height: 100%;
     padding: 0 !important;
-    box-shadow: 0px 0px 10px rgba(33,37,41,.05);
+    box-shadow: 0px 0px 10px 2px rgba(33,37,41,.05);
     margin-bottom: 0;
     background-color: #fafafa;
 }
 
 #main-content{
     padding-top: 0;
-    margin-top: 4rem;
+    margin-top: 5rem;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(33,37,41,.1);
 }
