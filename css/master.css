@@ -7,6 +7,10 @@
         color: #fff;
         padding: 1em;
     }
+
+    .container{
+        width: auto !important;
+    }
 }
 @media screen and (max-width: 990px) {
     .footer{
@@ -17,81 +21,83 @@
         color: #fff;
         padding-top: 1em;
     }
-
-    nav{
-        margin-bottom: 1em !important;
+    .footer div{
+        margin-bottom: 1em;
     }
 }
-
+@media screen and (max-width: 767px) {
+    nav{
+        margin-bottom: 1em !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #main-content{
+        margin: 0 !important;
+    }
+    #navigation{
+        margin-bottom: 1em;
+    }
+}
 html{
     overflow-x: hidden;
 }
-
 body{
     height: 100%;
     width: 100%;
     position: relative;
     background-color: #f5f5f5 !important;
 }
-
 header{
     padding-top: 1em;
     padding-bottom: 1em;
     height: 10%;
 }
-
 header > h1{
     margin-left: 5%;
     margin-top: 0;
 }
-
 nav{
     margin-top: 5rem;
 }
-
 nav a{
     background-color: #f0f0f0;
     color: black;
 }
-
 nav a:hover{
     color: black;
     border-right: 0.6rem solid #85cafe;
     background-color: #f0f0f0 !important;
 }
-
 .no-border{
     border: 0 !important;
     border-radius: 0 !important;
 }
-
 .active{
     border-right: 0.6rem solid #85cafe;
 }
-
 #page-header{
     box-shadow: 0px 5px 10px rgba(33,37,41,.1);
     position: relative;
     z-index: 2;
-    background-color: #85cafe; /*#85cafe #fafafa*/
+    background-color: #fafafa; /*#85cafe #fafafa*/
 }
-
 #wrapper{
     position: relative;
     z-index: 1;
     padding: 0 !important;
     box-shadow: 0px 0px 10px 2px rgba(33,37,41,.05);
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     background-color: #fafafa;
 }
-
 #main-content{
     padding-top: 0;
     margin-top: 5rem;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(33,37,41,.1);
+    overflow-x: hidden;
 }
-
-#footer > .container{
-    width: 100%;
+.footer > .container{
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 0 !important;
 }
